@@ -98,8 +98,6 @@ def download_file(url: str, output_path: str, token: str):
     # Determine if the output_path is a file path or a directory
     if os.path.isdir(output_path):
         output_file = os.path.join(output_path, filename)
-    else:
-        output_file = output_path
 
     with open(output_file, 'wb') as f:
         downloaded = 0
